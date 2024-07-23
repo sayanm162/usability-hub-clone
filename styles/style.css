@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-colour: #183b56;
+    --secondary-text-colour: #577592;
+    --accent-color:#2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color:var(--primary-text-colour);
+
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size:2rem;
+}
+
+h3{
+    font-size: 1.1rem;
+}
+
+p{
+    font-size: 1.15rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-text-colour);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Utility classes*/
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container{
+    max-width:1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    
+}
+
+.flex {
+    display:flex;
+    justify-content: center;
+    
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    color:white !important;
+    border-radius: 5px;
+    font-weight: 700;
+    padding:12px 14px;
+    box-shadow: 0 0 2px var(--secondary-text-colour);
+    transition: background-color 0.2s ease-out !important;
+    
+}
+
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button{
+    background-color:  white;
+    color: var(--secondary-text-colour);
+    border: 0.5px solid var(--secondary-text-colour);
+    border-radius: 5px;
+    font-weight: 700;
+    padding:12px 14px;
+    box-shadow: 0 0 2px var(--secondary-text-colour);
+    transition: color background-color 0.2s ease-out !important;
+}
+
+.secondary-button:hover{
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/*top banner*/
+
+.banner-text{
+    color:white;
+    padding: 15px 30px;
+    text-align: center;
+
+}
+
+.top-banner{
+    background-color: #4fb3d4;
+    background-image: url("/resources/asset\ 30.png");
+    background-size: 300px;
+    
+}
+/* navbar */
+.company-logo img{
+    width: 200px;
+}
+
+.main-nav{
+    justify-content: space-between;
+    margin-top:20px;
+    align-items: center;
+}
+
+.nav-links ul{
+    justify-content: end;
+    gap:40px;
+    align-items: center;
+}
+
+.nav-links{
+    flex-basis:740px;
+
+}
+
+.hover-link{
+    color: var(--primary-text-colour);
+    transition: color 0.2s ease-out;
+}
+
+
+.hover-link:hover {
+    color:var(--accent-color);
+}
+
+/*header----------------------------------------------------*/
+header{
+    padding: 50px var(--padding-inline-section);
+}
+
+.header-section{
+    justify-content: center;
+    gap:50px;
+}
+
+.header-right img{
+    width:600px;
+}
+
+.header-left{
+    max-width: 40vw;
+    align-self: center;
+}
+
+.header-left p {
+    margin-block-start: 5px;
+    margin-block-end: 20px;
+}
+
+/*companies section----------------------------*/
+.companies-section .companies-header{
+    text-align: center;
+    margin-block: 30px;
+
+}
+
+.client-logo img{
+    width:120px;
+    height:60px;
+}
+.client-logo{
+    justify-content: space-between;
+    color:var(--primary-text-colour);
+}
+
+/*Feature section ------------------*/
+.features-header , .examples-header{
+    text-align: center;
+}
+
+.features-section{
+    padding:80px var(--padding-inline-section) 0;
+    background-image: url(./resources/asset\ 32.svg);
+}
+
+.features-heading-text{
+    margin-bottom:20px;
+}
+
+.feature-card{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 30%;
+
+}
+
+/* .feature-card img{
+    width:30%;
+} */
+
+.feature-card p{
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+.features-area{
+    flex-wrap:wrap;
+    justify-content: space-between;
+    gap:40px;
+    margin-top:60px;
+}
+
+/*big feature section 1 ------------------------------*/
+.big-features-section{
+    padding: 70px var(--padding-inline-section) 0;
+
+}
+
+.big-feature-container{
+    gap:30px;
+}
+
+.feature-img img{
+    width:100%;
+}
+
+.feature-desc{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feature-desc h4{
+    color:var(--secondary-text-colour)
+}
+
+/* example section */
+.examples-header{
+    padding:40px var(--padding-inline-section) 0;
+}
+
+.examples-header a{
+    margin-top: 10px;
+}
+
+.example-area{
+    justify-content: space-between;
+    margin-top: 60px;
+    padding-bottom: 50px;
+}
+
+.examples-card{
+    width:23%;
+    position:relative;
+    min-height:300px;
+    background-color: black;
+}
+
+.card-text{
+    position: absolute;
+    bottom:20px;
+    left:20px;
+    right:20px;
+    color:white;
+    font-weight: 500;
+}
+
+.card1 {
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(/resources/asset\ 35.jpeg);
+    background-size: cover;
+}
+
+.card2 {
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(/resources/asset\ 36.jpeg);
+    background-size: cover;
+}
+
+.card3 {
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(/resources/asset\ 37.jpeg);
+    background-size: cover;
+}
+.card4 {
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(/resources/asset\ 34.jpeg);
+    background-size: cover;
+}
+
+.examples-card:hover{
+    box-shadow: 0 0 10px #888;
+}
+/*Testing or cta section*/
+
+.cta-section-container{
+    flex-direction: column;
+    gap:50px;
+    align-items: center;
+    color:white;
+}
+
+.cta-section-container .primary-button{
+    width:10.5%;
+}
+
+.cta-section{
+    
+    background-color: #183b54;
+    padding:120px var(--padding-inline-section) 80px;
+}
+
+.cta-section-container p {
+    color:white;
+}
+
+/* footer section*/
+footer{
+    padding: 60px var(--padding-inline-section) 20px;
+    background-color: #ebf2fa;
+}
+
+.link-column{
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+.footer-section{
+    justify-content: space-between;
+} 
+/* sub-footer section */
+.sub-footer-section {
+    background-color: #9999;
+    padding: 10px var(--padding-inline-section) 10px;
+}
+
+.sub-footer-area{
+    justify-content: center;
+    gap:30px;
+}
+
